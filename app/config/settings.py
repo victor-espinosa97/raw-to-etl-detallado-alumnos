@@ -1,0 +1,46 @@
+# config/settings.py
+
+INPUT_FILE = "data/estudiantes.csv"
+
+OUTPUT_PARQUET = "output/estudiantes_limpio.parquet"
+OUTPUT_CSV = "output/estudiantes_limpio.csv"
+
+KEY_ESTUDIANTE = "NUI"
+KEY_INSTITUCION = "INSTITUCION"
+
+COLUMNAS_POR_ESTUDIANTE = [
+    "FECHA_NACIMIENTO",
+    "GENERO",
+    "TIPO_DE_SANGRE",
+    "PAIS_NACIMIENTO",
+    "ETNIA",
+    "DISCAPACIDAD",
+    "SISBEN",
+    "SUBSIDIO",
+    "PER_ID",
+    "EPS_ESTUDIANTE",
+    "APOYO_ACADEMICO_ESPECIAL",
+    "SRPA",
+    "PAIS_ORIGEN",
+    "CORREO",
+    "BARRIO",
+    "EPS",
+    "SISBEN_IV",
+    "RENOMBRE",
+    "HA_ESTADO_VINCULADO_SRPA",
+    "ESTA_ACTIVO_SRPA",
+    "TELEFONO",
+    "TRA_ESP_APR_ESCOLAR",
+    "LIST_CAP_EXCEPCIONALES",
+    "CAMPESINO",
+    "PAIS_NACIONALIDAD2"
+]
+
+COLUMNAS_POR_INSTITUCION = [
+    "DANE"
+]
+
+COLUMNAS_POR_SEDE = [
+    "CODIGO_DANE_SEDE",
+    "ZONA_SEDE"
+]
