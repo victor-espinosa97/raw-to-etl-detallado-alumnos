@@ -7,9 +7,8 @@ def completar_por_grupo(df, key, columna):
 
     before = df[columna].isna().sum()
 
-    df[columna] = (
-        df.groupby(key)[columna]
-        .transform(lambda x: x.ffill().bfill())
+    df[columna] = df.groupby(key, dropna=False)[columna].transform(
+        lambda x: x.ffill().bfill()
     )
 
     after = df[columna].isna().sum()

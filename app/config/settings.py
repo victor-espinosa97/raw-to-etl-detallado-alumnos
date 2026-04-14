@@ -3,7 +3,7 @@
 INPUT_FILE = "data/estudiantes.csv"
 
 OUTPUT_PARQUET = "output/estudiantes_limpio.parquet"
-OUTPUT_CSV = "output/estudiantes_limpio.csv"
+OUTPUT_CSV = "output/estudiantes_limpio_utf_8.csv"
 
 KEY_ESTUDIANTE = "NUI"
 KEY_INSTITUCION = "INSTITUCION"
@@ -34,6 +34,10 @@ COLUMNAS_POR_ESTUDIANTE = [
     "LIST_CAP_EXCEPCIONALES",
     "CAMPESINO",
     "PAIS_NACIONALIDAD2"
+]
+
+COLUMNAS_FECHA = [
+    "FECHA_NACIMIENTO"
 ]
 
 COLUMNAS_POR_INSTITUCION = [
